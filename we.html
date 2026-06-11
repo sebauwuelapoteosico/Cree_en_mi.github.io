@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pagina Full SERIA</title>
+
+<style>
+#pantallaCompleta {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 9999;
+}
+</style>
+
+<script>
+function activar() {
+  document.getElementById("pantallaCompleta").style.display = "block";
+  document.getElementById("audio").play();
+}
+</script>
+
+</head>
+<body>
+
+<button onclick="activar()">
+  PLATA GRATIS AQUI!!!!
+</button>
+
+<img
+  id="pantallaCompleta"
+  src="https://tse1.mm.bing.net/th/id/OIP.oGHlSSOMLSnQwbUYm0avXgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+  alt="Imagen">
+
+<audio id="audio">
+  <source src="jaja.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
