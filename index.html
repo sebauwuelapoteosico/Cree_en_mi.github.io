@@ -2,9 +2,35 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pagina Full SERIA</title>
 
 <style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+
+button {
+  font-size: 2rem;
+  padding: 25px 40px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ff0000;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255,0,0,0.5);
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
 #pantallaCompleta {
   display: none;
   position: fixed;
@@ -14,6 +40,15 @@
   height: 100vh;
   object-fit: cover;
   z-index: 9999;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+  button {
+    width: 90%;
+    font-size: 2.2rem;
+    padding: 30px;
+  }
 }
 </style>
 
